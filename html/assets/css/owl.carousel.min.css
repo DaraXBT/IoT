@@ -1,3 +1,15 @@
+/*-----------------
+    @Typography
+-----------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Poppins:400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+/*---------------------------
+** Global style
+
+---------------------------*/
+*{
+  font-family: Kantumruy Pro, sans-serif;
+}
 /* 
  *  Owl Carousel - Animate Plugin
  */

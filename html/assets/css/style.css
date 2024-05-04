@@ -52,9 +52,14 @@
     @Typography
 -----------------*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Poppins:400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
 /*---------------------------
 ** Global style
+
 ---------------------------*/
+*{
+  font-family: Kantumruy Pro, sans-serif;
+}
 .mybtn1 {
   font-size: 14px;
   text-transform: uppercase;
@@ -244,8 +249,8 @@
 }
 
 .mybtn-bg {
-  background: #EA384D;
-  border-color: #EA384D;
+  background: #ea384d;
+  border-color: #ea384d;
   color: #fff;
 }
 
@@ -254,7 +259,7 @@
 }
 
 .mybtn-bg:hover span {
-  color: #EA384D;
+  color: #ea384d;
 }
 
 .mybtn-light {
@@ -263,7 +268,7 @@
 
 .mybtn-light:before,
 .mybtn-light:after {
-  background: #EA384D;
+  background: #ea384d;
 }
 
 .mybtn-light:hover span {
@@ -271,21 +276,21 @@
 }
 
 .mybtn-light span {
-  color: #EA384D;
+  color: #ea384d;
 }
 
 .mybtn-bord {
   background: transparent;
-  border: 1px solid #EA384D;
+  border: 1px solid #ea384d;
 }
 
 .mybtn-bord:before,
 .mybtn-bord:after {
-  background: #EA384D;
+  background: #ea384d;
 }
 
 .mybtn-bord:hover {
-  border-color: #EA384D;
+  border-color: #ea384d;
 }
 
 .mybtn-bord:hover span {
@@ -323,13 +328,25 @@
 }
 @keyframes b-shadow {
   0% {
-    box-shadow: 0px 0px 0px 20px rgba(59, 38, 219, 0.1), 0px 0px 0px 40px rgba(59, 38, 219, 0.1), 0px 0px 0px 60px rgba(59, 38, 219, 0.1), 0px 0px 0px 80px rgba(59, 38, 219, 0.1), 0px 0px 0px 100px rgba(59, 38, 219, 0.1);
+    box-shadow: 0px 0px 0px 20px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 40px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 60px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 80px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 100px rgba(59, 38, 219, 0.1);
   }
   50% {
-    box-shadow: 0px 0px 0px 50px rgba(59, 38, 219, 0.1), 0px 0px 0px 75px rgba(59, 38, 219, 0.1), 0px 0px 0px 100px rgba(59, 38, 219, 0.1), 0px 0px 0px 125px rgba(59, 38, 219, 0.1), 0px 0px 0px 150px rgba(59, 38, 219, 0.1);
+    box-shadow: 0px 0px 0px 50px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 75px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 100px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 125px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 150px rgba(59, 38, 219, 0.1);
   }
   100% {
-    box-shadow: 0px 0px 0px 20px rgba(59, 38, 219, 0.1), 0px 0px 0px 40px rgba(59, 38, 219, 0.1), 0px 0px 0px 60px rgba(59, 38, 219, 0.1), 0px 0px 0px 80px rgba(59, 38, 219, 0.1), 0px 0px 0px 100px rgba(59, 38, 219, 0.1);
+    box-shadow: 0px 0px 0px 20px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 40px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 60px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 80px rgba(59, 38, 219, 0.1),
+      0px 0px 0px 100px rgba(59, 38, 219, 0.1);
   }
 }
 .owl-carousel .owl-item img {
@@ -432,7 +449,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: #F7F8FC;
+  background: #f7f8fc;
   z-index: -9999;
 }
 
@@ -709,15 +726,18 @@
   background-color: #e6e6e6;
 }
 @keyframes folding {
-  0%, 10% {
+  0%,
+  10% {
     transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
-  25%, 75% {
+  25%,
+  75% {
     transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
-  90%, 100% {
+  90%,
+  100% {
     transform: perspective(140px) rotateY(180deg);
     opacity: 0;
   }
@@ -825,7 +845,8 @@
   bottom: -1px;
   width: 100%;
 }
-.curve.curve-bottom:after, .curve.curve-bottom:before {
+.curve.curve-bottom:after,
+.curve.curve-bottom:before {
   bottom: 0;
 }
 .curve.curve-top {
@@ -833,7 +854,8 @@
   top: -1px;
   width: 100%;
 }
-.curve.curve-top:after, .curve.curve-top:before {
+.curve.curve-top:after,
+.curve.curve-top:before {
   top: 0;
   border-top: 80px solid #fff;
   border-bottom: 0;
@@ -844,7 +866,8 @@
 .curve.curve-top:before {
   border-right: 30vw solid transparent;
 }
-.curve:after, .curve:before {
+.curve:after,
+.curve:before {
   content: "";
   width: 0;
   height: 0;
@@ -910,7 +933,7 @@ h4,
 h5,
 h6 {
   color: #242424;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 
 p {
@@ -951,17 +974,17 @@ ul {
 }
 
 /*input and button type focus outline disable*/
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
-input[type=tel]:focus,
-input[type=number]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
 textarea:focus,
-input[type=button]:focus,
-input[type=reset]:focus,
-input[type=submit]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
 select:focus {
   outline: none;
   box-shadow: none;
@@ -1011,7 +1034,8 @@ select:focus {
 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link::before {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
 }
-.navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before, .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
+.navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before,
+.navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
 }
 .navigation .navbar {
@@ -1051,7 +1075,8 @@ select:focus {
   background: #fff;
   transition: 0.5s;
 }
-.navigation .navbar #mainmenu ul .nav-item .nav-link:hover::before, .navigation .navbar #mainmenu ul .nav-item .nav-link.active::before {
+.navigation .navbar #mainmenu ul .nav-item .nav-link:hover::before,
+.navigation .navbar #mainmenu ul .nav-item .nav-link.active::before {
   position: absolute;
   content: " ";
   width: 70%;
@@ -1070,7 +1095,13 @@ select:focus {
   border-radius: 0px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
 }
-.navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item {
+.navigation
+  .navbar
+  #mainmenu
+  ul
+  .nav-item.dropdown:hover
+  .dropdown-menu
+  .dropdown-item {
   background: #fff;
   padding: 8px 15px;
   font-size: 15px;
@@ -1079,15 +1110,34 @@ select:focus {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in;
 }
-.navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item i {
+.navigation
+  .navbar
+  #mainmenu
+  ul
+  .nav-item.dropdown:hover
+  .dropdown-menu
+  .dropdown-item
+  i {
   font-size: 13px;
   margin-right: 4px;
 }
-.navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item:hover {
+.navigation
+  .navbar
+  #mainmenu
+  ul
+  .nav-item.dropdown:hover
+  .dropdown-menu
+  .dropdown-item:hover {
   background: #d43f8d;
   color: #fff;
 }
-.navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item:last-child {
+.navigation
+  .navbar
+  #mainmenu
+  ul
+  .nav-item.dropdown:hover
+  .dropdown-menu
+  .dropdown-item:last-child {
   border-bottom: 0px;
 }
 
@@ -1184,7 +1234,7 @@ select:focus {
 }
 .about .box {
   text-align: center;
-  background: #F7F9FF;
+  background: #f7f9ff;
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in;
@@ -1241,7 +1291,7 @@ select:focus {
 .whaybest {
   position: relative;
   padding: 110px 0px 83px;
-  background: #F7F9FF;
+  background: #f7f9ff;
 }
 .whaybest .row-one {
   margin-bottom: 55px;
@@ -1427,7 +1477,7 @@ select:focus {
 ---------------------------*/
 .video {
   padding: 110px 0px 90px;
-  background: #F7F9FF;
+  background: #f7f9ff;
   position: relative;
 }
 .video .right-shape2 {
@@ -1561,7 +1611,7 @@ select:focus {
 ---------------------------*/
 .dealofweek {
   padding: 110px 0px 120px;
-  background: #F7F9FF;
+  background: #f7f9ff;
   position: relative;
 }
 .dealofweek .deal-slider-area {
@@ -1640,7 +1690,12 @@ select:focus {
   line-height: 24px;
   color: #242424;
 }
-.dealofweek .deal-slider-area .content .right-area .deal-counter span:last-child {
+.dealofweek
+  .deal-slider-area
+  .content
+  .right-area
+  .deal-counter
+  span:last-child {
   margin-right: 0px;
 }
 .dealofweek .deal-slider-area .content .right-area .deal-counter span small {
@@ -1771,7 +1826,7 @@ select:focus {
 .testimonial-area {
   padding: 110px 0px 120px;
   position: relative;
-  background: #F7F9FF;
+  background: #f7f9ff;
 }
 .testimonial-area .section-title {
   margin-bottom: 50px;
@@ -1843,7 +1898,7 @@ select:focus {
   position: absolute;
   width: 120px;
   height: 120px;
-  padding: 15px;
+  padding: 10px;
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
@@ -1929,7 +1984,7 @@ select:focus {
 .faq {
   padding: 110px 0px 100px;
   position: relative;
-  background: #F7F9FF;
+  background: #f7f9ff;
 }
 .faq .right-shape {
   position: absolute;
@@ -1998,7 +2053,7 @@ select:focus {
   color: #555;
   margin-right: 10px;
 }
-.faq .accordion .panel-title[aria-expanded=true]::before {
+.faq .accordion .panel-title[aria-expanded="true"]::before {
   font-family: "Font Awesome 5 Free";
   content: "";
 }
@@ -2424,7 +2479,8 @@ select:focus {
 .index2 .hero-area .curve:after {
   border-left: 50vw solid transparent;
 }
-.index2 .hero-area .curve:after, .index2 .hero-area .curve:before {
+.index2 .hero-area .curve:after,
+.index2 .hero-area .curve:before {
   border-bottom: 300px solid #fff;
 }
 .index2 .hero-area .right-img .img {
@@ -2550,7 +2606,8 @@ select:focus {
   border: 0px;
   transition: all 0.3s ease-in;
 }
-.pagination .page-item .page-link.active, .pagination .page-item .page-link:hover {
+.pagination .page-item .page-link.active,
+.pagination .page-item .page-link:hover {
   color: #fff;
   background: #0250c5;
 }
@@ -3021,8 +3078,8 @@ select:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   border-radius: 0px 0px 300px 0px;
 }
 .home5 .hero-area .shape {
@@ -3044,8 +3101,8 @@ select:focus {
   }
 }
 .home5 .hero-area .discount-circle-inner {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .about {
   position: relative;
@@ -3057,14 +3114,14 @@ select:focus {
   border-radius: 30px 0px 30px 0px;
 }
 .home5 .about .box .inner-box .icon i {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .home5 .about .box::after {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   opacity: 1;
   width: 100%;
   height: 0%;
@@ -3100,8 +3157,8 @@ select:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .whaybest .shape {
@@ -3126,8 +3183,8 @@ select:focus {
   color: #fff;
 }
 .home5 .feature .feature-box .icon-area .icon i {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3143,8 +3200,8 @@ select:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .dealofweek .shape {
@@ -3161,11 +3218,13 @@ select:focus {
   color: #fff;
 }
 .home5 .dealofweek .deal-slider-area {
-  box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.219), 0px 0px 0px 20px rgba(255, 255, 255, 0.219), 0px 0px 0px 30px rgba(255, 255, 255, 0.219);
+  box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.219),
+    0px 0px 0px 20px rgba(255, 255, 255, 0.219),
+    0px 0px 0px 30px rgba(255, 255, 255, 0.219);
 }
 .home5 .pricing .product-slider .owl-controls .owl-nav div:hover {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .video {
   position: relative;
@@ -3179,8 +3238,8 @@ select:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .video .shape {
@@ -3199,8 +3258,8 @@ select:focus {
 .home5 .video .video-play-btn i,
 .home5 .video .fun-box .inner-content2 .icon i,
 .home5 .video .fun-box .inner-content3 .icon i {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3216,8 +3275,8 @@ select:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .testimonial-area .shape {
@@ -3241,12 +3300,12 @@ select:focus {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .home5 .testimonial-area .testimonial-slider .owl-controls .owl-nav div:hover {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .testimonial-area .testimonial-slider .client .client-image::after {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .subscribe-section .download-buttons {
   margin-top: 55px;
@@ -3258,8 +3317,8 @@ select:focus {
   line-height: 26px;
 }
 .home5 .subscribe-section .download-buttons a {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   display: inline-block;
   padding: 18px 30px;
   font-size: 18px;
@@ -3271,8 +3330,8 @@ select:focus {
   font-size: 24px;
 }
 .home5 .subscribe-section .newsletter-form-area button {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   cursor: pointer;
 }
 .home5 .faq {
@@ -3287,8 +3346,8 @@ select:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   border-radius: 200px 0px 200px 0px;
   z-index: -1;
 }
@@ -3309,8 +3368,8 @@ select:focus {
   display: none;
 }
 .home5 .contact .info-box .left .icon i {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3319,8 +3378,8 @@ select:focus {
   animation: shapeani2 10s linear infinite;
 }
 .home5 .footer {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .footer .footer-info-area .text p,
 .home5 .footer .copy-bg p,
@@ -3328,14 +3387,21 @@ select:focus {
   color: #fff;
 }
 .home5 .bottomtotop i {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .compare-section .compare-table .price,
-.home5 .pricing .product-slider .item .single-product .content .price .new-price,
+.home5
+  .pricing
+  .product-slider
+  .item
+  .single-product
+  .content
+  .price
+  .new-price,
 .home5 .dealofweek .deal-slider-area .content .right-area .price p span {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3346,21 +3412,41 @@ select:focus {
   max-width: 170px;
   filter: brightness(0) invert(1);
 }
-.home5 .navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item:hover {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+.home5
+  .navigation
+  .navbar
+  #mainmenu
+  ul
+  .nav-item.dropdown:hover
+  .dropdown-menu
+  .dropdown-item:hover {
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .preloader-inner {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
-.home5 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before, .home5 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+.home5
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link:hover::before,
+.home5
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link.active::before {
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link::before {
-  background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: #d31027;
+  background: linear-gradient(to right, #ea384d, #d31027);
 }
 .home5 .footer {
   position: relative;
@@ -3384,7 +3470,8 @@ select:focus {
 .home7 .mybtn-light span {
   color: #0250c5;
 }
-.home7 .mybtn-light:before, .home7 .mybtn-light:after {
+.home7 .mybtn-light:before,
+.home7 .mybtn-light:after {
   background: #0250c5;
 }
 .home7 .mybtn-bg {
@@ -3494,7 +3581,9 @@ select:focus {
   color: #fff;
 }
 .home7 .dealofweek .deal-slider-area {
-  box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.219), 0px 0px 0px 20px rgba(255, 255, 255, 0.219), 0px 0px 0px 30px rgba(255, 255, 255, 0.219);
+  box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.219),
+    0px 0px 0px 20px rgba(255, 255, 255, 0.219),
+    0px 0px 0px 30px rgba(255, 255, 255, 0.219);
 }
 .home7 .pricing .product-slider .owl-controls .owl-nav div:hover {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
@@ -3617,7 +3706,14 @@ select:focus {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
 }
 .home7 .compare-section .compare-table .price,
-.home7 .pricing .product-slider .item .single-product .content .price .new-price,
+.home7
+  .pricing
+  .product-slider
+  .item
+  .single-product
+  .content
+  .price
+  .new-price,
 .home7 .dealofweek .deal-slider-area .content .right-area .price p span {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
 }
@@ -3629,13 +3725,33 @@ select:focus {
   max-width: 170px;
   filter: brightness(0) invert(1);
 }
-.home7 .navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item:hover {
+.home7
+  .navigation
+  .navbar
+  #mainmenu
+  ul
+  .nav-item.dropdown:hover
+  .dropdown-menu
+  .dropdown-item:hover {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
 }
 .home7 .preloader-inner {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
 }
-.home7 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before, .home7 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
+.home7
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link:hover::before,
+.home7
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link.active::before {
   background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
 }
 .home7 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link::before {
@@ -3666,7 +3782,8 @@ select:focus {
 .home9 .mybtn-light span {
   color: #0250c5;
 }
-.home9 .mybtn-light:before, .home9 .mybtn-light:after {
+.home9 .mybtn-light:before,
+.home9 .mybtn-light:after {
   background: #0250c5;
 }
 .home9 .mybtn-bg {
@@ -3692,7 +3809,20 @@ select:focus {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
-.home9 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before, .home9 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
+.home9
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link:hover::before,
+.home9
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link.active::before {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
@@ -3706,14 +3836,15 @@ select:focus {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
-.home9 .navigation .navbar #mainmenu ul .nav-item .nav-link:hover::before, .home9 .navigation .navbar #mainmenu ul .nav-item .nav-link.active::before {
+.home9 .navigation .navbar #mainmenu ul .nav-item .nav-link:hover::before,
+.home9 .navigation .navbar #mainmenu ul .nav-item .nav-link.active::before {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
 .home9 .hero-area {
   position: relative;
   overflow: hidden;
-  background: #F7F9FF;
+  background: #f7f9ff;
   padding: 297px 0px 220px;
 }
 .home9 .hero-area .shape {
@@ -3838,7 +3969,7 @@ select:focus {
 .home9 .dealofweek {
   position: relative;
   overflow: hidden;
-  background: #F7F9FF;
+  background: #f7f9ff;
 }
 .home9 .dealofweek .shape {
   position: absolute;
@@ -3867,7 +3998,7 @@ select:focus {
 }
 .home9 .video {
   position: relative;
-  background: #F7F9FF;
+  background: #f7f9ff;
   overflow: hidden;
 }
 .home9 .video .shape {
@@ -3897,7 +4028,7 @@ select:focus {
 }
 .home9 .testimonial-area {
   position: relative;
-  background: #F7F9FF;
+  background: #f7f9ff;
   overflow: hidden;
 }
 .home9 .testimonial-area .shape {
@@ -3965,7 +4096,7 @@ select:focus {
 }
 .home9 .faq {
   position: relative;
-  background: #F7F9FF;
+  background: #f7f9ff;
   overflow: hidden;
 }
 .home9 .faq .shape {
@@ -4022,7 +4153,14 @@ select:focus {
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
 .home9 .compare-section .compare-table .price,
-.home9 .pricing .product-slider .item .single-product .content .price .new-price,
+.home9
+  .pricing
+  .product-slider
+  .item
+  .single-product
+  .content
+  .price
+  .new-price,
 .home9 .dealofweek .deal-slider-area .content .right-area .price p span {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
@@ -4040,7 +4178,14 @@ select:focus {
 .home9 .footer .fotter-social-links ul li a {
   box-shadow: 0px 20px 20px 0px rgba(0, 37, 93, 0.15);
 }
-.home9 .navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item:hover {
+.home9
+  .navigation
+  .navbar
+  #mainmenu
+  ul
+  .nav-item.dropdown:hover
+  .dropdown-menu
+  .dropdown-item:hover {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
@@ -4048,7 +4193,20 @@ select:focus {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
-.home9 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before, .home9 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
+.home9
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link:hover::before,
+.home9
+  .navigation.stiky-nav
+  .navbar
+  #mainmenu
+  ul
+  .nav-item
+  .nav-link.active::before {
   background: #3b26db;
   background: linear-gradient(to right, #3b26db, #7b19cb);
 }
@@ -4058,7 +4216,7 @@ select:focus {
 }
 .home9 .footer {
   position: relative;
-  background: #F7F9FF;
+  background: #f7f9ff;
   overflow: hidden;
 }
 .home9 .footer .shape2 {
